@@ -16,13 +16,11 @@ https://www.raspberrypi.org/learning/noobs-install/worksheet/
 ## Install H.264/RTSP to HLS on the Pi
 
 Wait for the install to be done and then open a console window and type:
-
+```
 wget https://raw.githubusercontent.com/e1ioan/rokuphp/master/install.sh
-
 chmod +x install.sh
-
 sudo ./install.sh
-
+```
 You will be shown two option:
 1. To clean intall, which is recommended, will remove - if already installed - ffmpeg, apache2, php and then clean install and configure the packages
 2. Dirty install, which will leave all the packages alone if already installed, and just try to configure them.
