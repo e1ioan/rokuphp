@@ -115,7 +115,11 @@ echo -e "${GREEN}Remove old files${NC}"
 rm html.tar.gz
 rm apache.tmp
 
+LOCALIP=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
 echo ""
 echo -e "${YELLOW}---------------------${NC}"
 echo -e "${YELLOW}DONE INSTALLING!${NC}"
 echo -e "${YELLOW}---------------------${NC}"
+echo ""
+echo -e "${YELLOW}Now go to \"IP Camera Viewer Pro\" on Roku, and in settings, in the field PiIP enter: $LOCALIP${NC}"
+echo -e "${YELLOW}To configure your cameras, in your browser go to: http://$LOCALIP${NC}"
