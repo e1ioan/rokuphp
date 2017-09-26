@@ -18,7 +18,9 @@ https://www.raspberrypi.org/learning/noobs-install/worksheet/
 Wait for the install to be done and then open a console window and type:
 
 wget https://raw.githubusercontent.com/e1ioan/rokuphp/master/install.sh
+
 chmod +x install.sh
+
 sudo ./install.sh
 
 You will be shown two option:
