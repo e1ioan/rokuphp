@@ -15,7 +15,7 @@ https://www.raspberrypi.org/learning/noobs-install/worksheet/
 
 ## Install H.264/RTSP to HLS on the Pi
 
-Wait for the install to be done and then open a console window and type:
+Wait for the Raspbian OS install to be done and then, open a console window and type:
 ```
 wget https://raw.githubusercontent.com/e1ioan/rokuphp/master/install.sh
 chmod +x install.sh
