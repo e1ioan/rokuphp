@@ -13,13 +13,19 @@ https://www.raspberrypi.org/learning/noobs-install/worksheet/
 5. Connect the power to the Raspberry Pi and follow the instructions.
 6. When asked what OS to install, select Raspbian (make sure at the bottom of the screen you select the right Language and Keyboard
 
-Wait for the install to be done and then open a console window and type:
-
 ## Install H.264/RTSP to HLS on the Pi
+
+Wait for the install to be done and then open a console window and type:
 
 wget https://raw.githubusercontent.com/e1ioan/rokuphp/master/install.sh
 chmod +x install.sh
 sudo ./install.sh
+
+You will be shown two option:
+1. To clean intall, which is recommended, will remove - if already installed - ffmpeg, apache2, php and then clean install and configure the packages
+2. Dirty install, which will leave all the packages alone if already installed, and just try to configure them.
+
+Select 1 or 2 and wait for "DONE INSTALL" message.
 
 At this point, if you didn't receive any errors, you are ready to go.
 Open IP Camera Viewer Pro on Roku, go into Settings and in the field PiIP enter the the install script showed at the end.
