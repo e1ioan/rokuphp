@@ -4,7 +4,7 @@
 
 You will need a Raspberry Pi. I'm using for my tests the "Raspberry PI 3 Model B", but any Raspberry Pi with an Ethernet port or WiFi support should work.
 
-If you already have Raspbian installed on your Raspberry Pi, skip to ## 2
+If you already have Raspbian installed on your Raspberry Pi, skip to **2**
 
 First, you need to install Raspbian OS on your Raspberry Pi. To do this, you can follow the instructions here:
 https://www.raspberrypi.org/learning/noobs-install/worksheet/
