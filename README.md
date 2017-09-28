@@ -1,6 +1,10 @@
 # Enable H.264/RTSP to HLS in IP Camera Viewer Pro on Roku
 
+## 1. Install Raspbian
+
 You will need a Raspberry Pi. I'm using for my tests the "Raspberry PI 3 Model B", but any Raspberry Pi with an Ethernet port or WiFi support should work.
+
+If you already have Raspbian installed on your Raspberry Pi, skip to ## 2
 
 First, you need to install Raspbian OS on your Raspberry Pi. To do this, you can follow the instructions here:
 https://www.raspberrypi.org/learning/noobs-install/worksheet/
@@ -13,7 +17,7 @@ https://www.raspberrypi.org/learning/noobs-install/worksheet/
 5. Connect the power to the Raspberry Pi and follow the instructions.
 6. When asked what OS to install, select Raspbian (make sure at the bottom of the screen you select the right Language and Keyboard
 
-## Install H.264/RTSP to HLS on the Pi
+## 2. Install H.264/RTSP to HLS on the Pi
 
 Wait for the Raspbian OS install to be done and then, open a console window and type:
 ```
