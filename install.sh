@@ -109,6 +109,7 @@ else
 fi
 
 echo -e "${GREEN}Restarting apache2${NC}"
+systemctl daemon-reload
 service apache2 restart
 
 echo -e "${GREEN}Remove old files${NC}"
