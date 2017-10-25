@@ -64,10 +64,10 @@ If you have some IP Cameras around the house that are ONVIF compliant or have h.
 As I promised before, I will try my best to get rtsp/h.264 and onvif working in the IP Camera Viewer Pro (BTW those features are only going to be in the Pro version).
 Now I have something to show, a preview of how everything is working, and what will take to setup. All the features are 99.9% already built, all the software written, now I'm just making sure everything works the way it should. Soon I'll be releasing a detailed "how to" with all the steps needed to get this working with your Roku, but [size=100]until then, here are some more details.[/size]
 
-⋅⋅* You will need a Raspberry Pi. I'm using for my tests the "Raspberry PI 3 Model B", but any Raspberry Pi with an Ethernet port or WiFi support should work.
-⋅⋅* You'll need to install some software packages that I will provide 100% free on your Raspberry Pi (I'll release step by step instructions)
-⋅⋅* Connect the Pi to your Router, make note of the IP, and forget about it.
-⋅⋅* On the Roku, in IP Camera Viewer Pro -> Settings, enter the Rapberry Pi IP address and you are done.   
+  * You will need a Raspberry Pi. I'm using for my tests the "Raspberry PI 3 Model B", but any Raspberry Pi with an Ethernet port or WiFi support should work.
+  * You'll need to install some software packages that I will provide 100% free on your Raspberry Pi (I'll release step by step instructions)
+  * Connect the Pi to your Router, make note of the IP, and forget about it.
+  * On the Roku, in IP Camera Viewer Pro -> Settings, enter the Rapberry Pi IP address and you are done.   
 
 ![pic](https://i.imgur.com/bZa8bLX.jpg)
 
