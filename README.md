@@ -79,7 +79,8 @@ The second option will allow you to add any ONVIF compliant camera:
 
 All the cameras added will be automatically imported on Roku.
 
-Of course you will be able to edit/delete any of the cameras:
+Of course you will be able to edit/delete any of the cameras
+
 ![pic](https://i.imgur.com/wB9hzrH.png)
 
 The last option, has nothing to do with Roku (no roku necessary), but I thought it will be nice to be there: You can broadcast live on youtube or twitch your IP camera with a click of the button:
