@@ -52,8 +52,9 @@ After installing the OS, follow my guide (skip to step 2) to install my software
 
 ---------------------------
 
-[b][size=100]UPDATE EDIT  - October 1st, 2017: [/size][/b][size=100]Here is how to install the new H.264 support feature. https://github.com/e1ioan/rokuphp[/size]
-[b]Note:[/b] This requires IP Camera Viewer Pro 2.7, which is not yet available in the store (Roku store delays publishing the new version). If you installed the software needed on your Raspberry Pi, send me a private message for the new IP Camera Viewer Pro 2.7.
+**UPDATE EDIT  - October 1st, 2017:** Here is how to install the new H.264 support feature. https://github.com/e1ioan/rokuphp
+
+**Note:** This requires IP Camera Viewer Pro 2.7, which is not yet available in the store (Roku store delays publishing the new version). If you installed the software needed on your Raspberry Pi, send me a private message for the new IP Camera Viewer Pro 2.7.
 
 ---------------------------
 
