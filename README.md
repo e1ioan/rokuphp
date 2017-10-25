@@ -91,7 +91,8 @@ The last option, has nothing to do with Roku (no roku necessary), but I thought 
 So that's about it! 
 
 Here is a youtube video showing the Roku playing a h.264 rtsp live stream coming from an Axis IP camera. Of course, audio is supported:
-[youtube]hhfv8zitAX4[/youtube]
+
+[![DEMO Video](http://img.youtube.com/vi/hhfv8zitAX4/0.jpg)](http://www.youtube.com/watch?v=hhfv8zitAX4)
 
 Let me know what you think.
 Thank you!
