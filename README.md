@@ -1,5 +1,21 @@
 # Enable H.264/RTSP to HLS in IP Camera Viewer Pro on Roku
 
+If you have some IP Cameras around the house that are ONVIF compliant or have h.264 video encoding, and if you like to get dirty in some DIY, this project is for you.
+
+You will need a Raspberry Pi or an Orange Pi. I'm using for my tests the "Raspberry PI 3 Model B", but any Raspberry Pi with an Ethernet port or WiFi support should work. As for the Orange Pi, in my tests I used the Orange Pi Zero 512MB RAM version.
+
+**Note:** This requires IP Camera Viewer Pro 2.7 or newer version
+
+Along with Raspberry Pi, the software that converts h.264 rtsp streams to HLS for the IP Camera Viewer Pro also works on Orange Pi.
+Tested on the [$8 Pi Zero 512MB RAM version](https://www.aliexpress.com/store/product/New-Orange-Pi-Zero-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi/1553371_32761500374.html?spm=2114.12010612.0.0.6b3dc45fBK4POv]Orange)
+
+To install the OS on the Orange Pi, follow [this guide](http://lucsmall.com/2017/01/19/beginners-guide-to-the-orange-pi-zero/).
+
+![Orange Pi](https://i.imgur.com/W6m7oNE.jpg)
+
+After installing the OS on the Orange Pi, follow the guide bellow (skip to step 2) to install the software. For the Raspberry Pi, start with step 1.
+
+
 ## 1. Install Raspbian
 
 You will need a Raspberry Pi. I'm using for my tests the "Raspberry PI 3 Model B", but any Raspberry Pi with an Ethernet port or WiFi support should work.
@@ -39,35 +55,6 @@ To configure the cameras, in a browser enter the IP, create a user, log in... an
 The cameras created will be imported automatically to IP Camera Viewer Pro on Roku.
 
 ## 3. Adding Cameras using Web Interface
-
-**Announcement - October 16th, 2017**
-
-Along with Raspberry Pi, the software that converts h.264 rtsp streams to HLS for the IP Camera Viewer Pro also works on Orange Pi (tested on the $8 [url=https://www.aliexpress.com/store/product/New-Orange-Pi-Zero-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi/1553371_32761500374.html?spm=2114.12010612.0.0.6b3dc45fBK4POv]Orange Pi Zero[/url] 512MB RAM version)
-
-To install the OS on the Orange Pi, follow this guide: http://lucsmall.com/2017/01/19/beginners-guide-to-the-orange-pi-zero/
-
-After installing the OS, follow my guide (skip to step 2) to install my software : https://github.com/e1ioan/rokuphp
-
-![pic](https://i.imgur.com/W6m7oNE.jpg)
-
----------------------------
-
-**UPDATE EDIT  - October 1st, 2017:** Here is how to install the new H.264 support feature. https://github.com/e1ioan/rokuphp
-
-**Note:** This requires IP Camera Viewer Pro 2.7, which is not yet available in the store (Roku store delays publishing the new version). If you installed the software needed on your Raspberry Pi, send me a private message for the new IP Camera Viewer Pro 2.7.
-
----------------------------
-
-
-If you have some IP Cameras around the house that are ONVIF compliant or have h.264 video encoding, and if you like to get dirty in some DIY, this post is for you.
-
-As I promised before, I will try my best to get rtsp/h.264 and onvif working in the IP Camera Viewer Pro (BTW those features are only going to be in the Pro version).
-Now I have something to show, a preview of how everything is working, and what will take to setup. All the features are 99.9% already built, all the software written, now I'm just making sure everything works the way it should. Soon I'll be releasing a detailed "how to" with all the steps needed to get this working with your Roku, but [size=100]until then, here are some more details.[/size]
-
-  * You will need a Raspberry Pi. I'm using for my tests the "Raspberry PI 3 Model B", but any Raspberry Pi with an Ethernet port or WiFi support should work.
-  * You'll need to install some software packages that I will provide 100% free on your Raspberry Pi (I'll release step by step instructions)
-  * Connect the Pi to your Router, make note of the IP, and forget about it.
-  * On the Roku, in IP Camera Viewer Pro -> Settings, enter the Rapberry Pi IP address and you are done.   
 
 ![pic](https://i.imgur.com/bZa8bLX.jpg)
 
