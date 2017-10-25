@@ -48,7 +48,7 @@ To install the OS on the Orange Pi, follow this guide: http://lucsmall.com/2017/
 
 After installing the OS, follow my guide (skip to step 2) to install my software : https://github.com/e1ioan/rokuphp
 
-[img]https://i.imgur.com/W6m7oNE.jpg[/img]
+![pic](https://i.imgur.com/W6m7oNE.jpg)
 
 ---------------------------
 
@@ -71,35 +71,35 @@ Now I have something to show, a preview of how everything is working, and what w
 [/list]
 
 
-[img]https://i.imgur.com/bZa8bLX.jpg[/img]
+![pic](https://i.imgur.com/bZa8bLX.jpg)
 
 If in any browser, you open your Raspberry Pi IP address, you will be able to configure your cameras. On the Roku you don't need to do anything, the cameras will be imported automatically from the Pi.
 Lets say the IP for you Raspberry Pi is 192.168.1.70. You open this address in your browser http://192.168.1.70 (on the phone or computer) and you'll get to the Login page:
 
-[img]https://i.imgur.com/s2jLVNU.png[/img]
+![pic](https://i.imgur.com/s2jLVNU.png)
 
 After Login in, you get to the "menu" page where you can see a list of all the cameras you already added and the "services" available:
 
-[img]https://i.imgur.com/8smDkKt.png[/img]
+![pic](https://i.imgur.com/8smDkKt.png)
 
 First option, will allow you to add rtsp cameras manually:
 
-[img]https://i.imgur.com/n72Y6oq.png[/img]
+![pic](https://i.imgur.com/n72Y6oq.png)
 
-[img]https://i.imgur.com/0LVlGDl.png[/img]
+![pic](https://i.imgur.com/0LVlGDl.png)
 
 The second option will allow you to add any ONVIF compliant camera:
 
-[img]https://i.imgur.com/MTft4E1.png[/img]
+![pic](https://i.imgur.com/MTft4E1.png)
 All the cameras added will be automatically imported on Roku.
 
 Of course you will be able to edit/delete any of the cameras:
-[img]https://i.imgur.com/wB9hzrH.png[/img]
+![pic](https://i.imgur.com/wB9hzrH.png)
 
 The last option, has nothing to do with Roku (no roku necessary), but I thought it will be nice to be there: You can broadcast live on youtube or twitch your IP camera with a click of the button:
-[img]https://i.imgur.com/VMCxeZv.png[/img]
+![pic](https://i.imgur.com/VMCxeZv.png)
 
-[img]https://i.imgur.com/db96Wz6.png[/img]
+![pic](https://i.imgur.com/db96Wz6.png)
 
 So that's about it! 
 
