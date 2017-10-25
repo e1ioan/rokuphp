@@ -4,7 +4,8 @@ If you have some IP Cameras around the house that are ONVIF compliant or have h.
 
 You will need a Raspberry Pi or an Orange Pi. I'm using for my tests the "Raspberry PI 3 Model B", but any Raspberry Pi with an Ethernet port or WiFi support should work. As for the Orange Pi, in my tests I used the Orange Pi Zero 512MB RAM version.
 
-**Note:** This requires IP Camera Viewer Pro 2.7 or newer version
+**Note:** 
+This feature requires IP Camera Viewer Pro 2.7 or newer version on your Roku device.
 
 Along with Raspberry Pi, the software that converts h.264 rtsp streams to HLS for the IP Camera Viewer Pro also works on Orange Pi.
 Tested on the [$8 Pi Zero 512MB RAM version](https://www.aliexpress.com/store/product/New-Orange-Pi-Zero-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi/1553371_32761500374.html?spm=2114.12010612.0.0.6b3dc45fBK4POv]Orange)
@@ -35,7 +36,9 @@ https://www.raspberrypi.org/learning/noobs-install/worksheet/
 
 ## 2. Install H.264/RTSP to HLS on the Pi
 
-**Note:** You can use H.264 to HLS on the Pi along with any other software you want to use, for example Retro Pie. My software gets along just fine with almost anything else.
+**Note:**  
+You can use H.264 to HLS on the Pi along with any other software you want to use, for example Retro Pie. My software gets along just fine with almost anything else.
+
 
 Wait for the Raspbian OS install to be done and then, open a console window and type:
 ```
