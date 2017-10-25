@@ -37,3 +37,74 @@ Open IP Camera Viewer Pro on Roku, go into Settings and in the field PiIP enter 
 To configure the cameras, in a browser enter the IP, create a user, log in... and create cameras. 
 
 The cameras created will be imported automatically to IP Camera Viewer Pro on Roku.
+
+## 3. Adding Cameras using Web Interface
+
+[b]Announcement - October 16th, 2017[/b]
+
+Along with Raspberry Pi, the software that converts h.264 rtsp streams to HLS for the IP Camera Viewer Pro also works on Orange Pi (tested on the $8 [url=https://www.aliexpress.com/store/product/New-Orange-Pi-Zero-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi/1553371_32761500374.html?spm=2114.12010612.0.0.6b3dc45fBK4POv]Orange Pi Zero[/url] 512MB RAM version)
+
+To install the OS on the Orange Pi, follow this guide: http://lucsmall.com/2017/01/19/beginners-guide-to-the-orange-pi-zero/
+
+After installing the OS, follow my guide (skip to step 2) to install my software : https://github.com/e1ioan/rokuphp
+
+[img]https://i.imgur.com/W6m7oNE.jpg[/img]
+
+---------------------------
+
+[b][size=100]UPDATE EDIT  - October 1st, 2017: [/size][/b][size=100]Here is how to install the new H.264 support feature. https://github.com/e1ioan/rokuphp[/size]
+[b]Note:[/b] This requires IP Camera Viewer Pro 2.7, which is not yet available in the store (Roku store delays publishing the new version). If you installed the software needed on your Raspberry Pi, send me a private message for the new IP Camera Viewer Pro 2.7.
+
+---------------------------
+
+
+If you have some IP Cameras around the house that are ONVIF compliant or have h.264 video encoding, and if you like to get dirty in some DIY, this post is for you.
+
+As I promised before, I will try my best to get rtsp/h.264 and onvif working in the IP Camera Viewer Pro (BTW those features are only going to be in the Pro version).
+Now I have something to show, a preview of how everything is working, and what will take to setup. All the features are 99.9% already built, all the software written, now I'm just making sure everything works the way it should. Soon I'll be releasing a detailed "how to" with all the steps needed to get this working with your Roku, but [size=100]until then, here are some more details.[/size]
+
+[list=1]
+[*]You will need a Raspberry Pi. I'm using for my tests the "Raspberry PI 3 Model B", but any Raspberry Pi with an Ethernet port or WiFi support should work.
+[*]You'll need to install some software packages that I will provide 100% free on your Raspberry Pi (I'll release step by step instructions)
+[*]Connect the Pi to your Router, make note of the IP, and forget about it.
+[*]On the Roku, in IP Camera Viewer Pro -> Settings, enter the Rapberry Pi IP address and you are done.   
+[/list]
+
+
+[img]https://i.imgur.com/bZa8bLX.jpg[/img]
+
+If in any browser, you open your Raspberry Pi IP address, you will be able to configure your cameras. On the Roku you don't need to do anything, the cameras will be imported automatically from the Pi.
+Lets say the IP for you Raspberry Pi is 192.168.1.70. You open this address in your browser http://192.168.1.70 (on the phone or computer) and you'll get to the Login page:
+
+[img]https://i.imgur.com/s2jLVNU.png[/img]
+
+After Login in, you get to the "menu" page where you can see a list of all the cameras you already added and the "services" available:
+
+[img]https://i.imgur.com/8smDkKt.png[/img]
+
+First option, will allow you to add rtsp cameras manually:
+
+[img]https://i.imgur.com/n72Y6oq.png[/img]
+
+[img]https://i.imgur.com/0LVlGDl.png[/img]
+
+The second option will allow you to add any ONVIF compliant camera:
+
+[img]https://i.imgur.com/MTft4E1.png[/img]
+All the cameras added will be automatically imported on Roku.
+
+Of course you will be able to edit/delete any of the cameras:
+[img]https://i.imgur.com/wB9hzrH.png[/img]
+
+The last option, has nothing to do with Roku (no roku necessary), but I thought it will be nice to be there: You can broadcast live on youtube or twitch your IP camera with a click of the button:
+[img]https://i.imgur.com/VMCxeZv.png[/img]
+
+[img]https://i.imgur.com/db96Wz6.png[/img]
+
+So that's about it! 
+
+Here is a youtube video showing the Roku playing a h.264 rtsp live stream coming from an Axis IP camera. Of course, audio is supported:
+[youtube]hhfv8zitAX4[/youtube]
+
+Let me know what you think.
+Thank you!
