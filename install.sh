@@ -87,8 +87,8 @@ echo -e "${GREEN}Changing directory rights${NC}"
 chown -R www-data:www-data /var/www/html
 chmod -R g+rw /var/www/html
 
-chown -R www-data:www-data /dev/shm
-chmod -R g+rw /dev/shm
+#chown -R www-data:www-data /dev/shm
+#chmod -R g+rw /dev/shm
 
 ROKUPHP="# Added by roku php install"
 
