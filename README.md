@@ -36,7 +36,7 @@ https://www.raspberrypi.org/learning/noobs-install/worksheet/
 
 ## 2. Install H.264/RTSP to HLS on the Pi
 
-**Note:**  
+**Note:** 
 You can use H.264 to HLS on the Pi along with any other software you want to use, for example Retro Pie. My software gets along just fine with almost anything else.
 
 
