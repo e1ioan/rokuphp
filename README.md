@@ -40,7 +40,7 @@ The cameras created will be imported automatically to IP Camera Viewer Pro on Ro
 
 ## 3. Adding Cameras using Web Interface
 
-[b]Announcement - October 16th, 2017[/b]
+**Announcement - October 16th, 2017**
 
 Along with Raspberry Pi, the software that converts h.264 rtsp streams to HLS for the IP Camera Viewer Pro also works on Orange Pi (tested on the $8 [url=https://www.aliexpress.com/store/product/New-Orange-Pi-Zero-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi/1553371_32761500374.html?spm=2114.12010612.0.0.6b3dc45fBK4POv]Orange Pi Zero[/url] 512MB RAM version)
 
@@ -91,6 +91,7 @@ First option, will allow you to add rtsp cameras manually:
 The second option will allow you to add any ONVIF compliant camera:
 
 ![pic](https://i.imgur.com/MTft4E1.png)
+
 All the cameras added will be automatically imported on Roku.
 
 Of course you will be able to edit/delete any of the cameras:
