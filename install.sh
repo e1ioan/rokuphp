@@ -58,7 +58,10 @@ if [ "$line" == "1" ]; then
 fi
 
 echo -e "${GREEN}Installing the required packages${NC}"	
-apt-get update
+# add new repository for php5
+echo "deb http://raspbian.mirror.uk.sargasso.net/raspbian/ jessie main contrib non-free rpi" >> /etc/apt/sources.list
+
+apt-get update -y
 apt-get install ffmpeg -y
 apt-get install apache2 -y
 apt-get install php5 libapache2-mod-php5 -y
@@ -68,7 +71,7 @@ echo -e "${GREEN}Rename index.html to index-old.html${NC}"
 mv /var/www/html/index.html /var/www/html/index-old.html
 
 echo -e "${GREEN}Retrieve php files archive...${NC}"
-wget -O html.tar.gz https://sites.google.com/site/marginallyhandy/html.tar.gz?attredirects=0&d=1 
+wget --no-http-keep-alive -O html.tar.gz "https://sites.google.com/site/marginallyhandy/html.tar.gz?attredirects=0&d=1"
 
 while :
 do
