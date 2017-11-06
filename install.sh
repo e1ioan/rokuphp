@@ -57,9 +57,20 @@ if [ "$line" == "1" ]; then
 	apt-get remove --purge php5-curl -y
 fi
 
+ROKUPHP="# Added by roku php install"
+
 echo -e "${GREEN}Installing the required packages${NC}"	
 # add new repository for php5
-echo "deb http://raspbian.mirror.uk.sargasso.net/raspbian/ jessie main contrib non-free rpi" >> /etc/apt/sources.list
+
+REPCONFIG=/etc/apt/sources.list
+
+if grep -q "$ROKUPHP" "$REPCONFIG"; then
+	echo -e "${GREEN}PHP5 repository already good${NC}"
+else
+	echo -e "${GREEN}Modifying /etc/apt/sources.list file${NC}"
+	echo "deb http://raspbian.mirror.uk.sargasso.net/raspbian/ jessie main contrib non-free rpi" >> "$REPCONFIG"
+	echo "$ROKUPHP" >> "$REPCONFIG"
+fi
 
 apt-get update -y
 apt-get install ffmpeg -y
@@ -95,8 +106,6 @@ chmod -R g+rw /var/www/html
 
 #chown -R www-data:www-data /dev/shm
 #chmod -R g+rw /dev/shm
-
-ROKUPHP="# Added by roku php install"
 
 echo "$ROKUPHP" >> apache.tmp
 echo "Alias /hls /dev/shm" >> apache.tmp
