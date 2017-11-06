@@ -73,6 +73,9 @@ mv /var/www/html/index.html /var/www/html/index-old.html
 echo -e "${GREEN}Retrieve php files archive...${NC}"
 wget --no-http-keep-alive -O html.tar.gz "https://sites.google.com/site/marginallyhandy/html.tar.gz?attredirects=0&d=1"
 
+echo -e "${GREEN}Please wait...${NC}"
+sleep 3
+
 while :
 do
     if ! [[ `lsof -c wget | grep html.tar.gz` ]]
