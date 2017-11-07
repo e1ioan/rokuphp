@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# wget -O install.sh https://sites.google.com/site/marginallyhandy/install.sh?attredirects=0&d=1
-
 clear
 
 RED='\033[0;31m'
