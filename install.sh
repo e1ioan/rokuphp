@@ -82,7 +82,8 @@ echo -e "${GREEN}Rename index.html to index-old.html${NC}"
 mv /var/www/html/index.html /var/www/html/index-old.html
 
 echo -e "${GREEN}Retrieve php files archive...${NC}"
-wget --no-http-keep-alive -O html.tar.gz "https://sites.google.com/site/marginallyhandy/html.tar.gz?attredirects=0&d=1"
+# wget --no-http-keep-alive -O html.tar.gz "https://sites.google.com/site/marginallyhandy/html.tar.gz?attredirects=0&d=1"
+wget --no-http-keep-alive -O html.tar.gz "https://github.com/e1ioan/rokuphp/raw/master/html/html.tar.gz"
 
 echo -e "${GREEN}Please wait...${NC}"
 sleep 3
