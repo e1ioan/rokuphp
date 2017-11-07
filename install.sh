@@ -106,20 +106,18 @@ chmod -R g+rw /var/www/html
 #chown -R www-data:www-data /dev/shm
 #chmod -R g+rw /dev/shm
 
-echo "$ROKUPHP" >> apache.tmp
-echo "Alias /hls /dev/shm" >> apache.tmp
-echo "<Directory /dev/shm>" >> apache.tmp
-echo "        Options Indexes FollowSymLinks" >> apache.tmp
-echo "        Require all granted" >> apache.tmp
-echo "</Directory>" >> apache.tmp
-
 APACHECONFIG=/etc/apache2/apache2.conf
 
 if grep -q "$ROKUPHP" "$APACHECONFIG"; then
 	echo -e "${GREEN}Apache config already good${NC}"
 else
 	echo -e "${GREEN}Modifying apache2.conf file${NC}"
-	cat apache.tmp >> "$APACHECONFIG"
+	echo "$ROKUPHP" >> "$APACHECONFIG"
+	echo "Alias /hls /dev/shm" >> "$APACHECONFIG"
+	echo "<Directory /dev/shm>" >> "$APACHECONFIG"
+	echo "        Options Indexes FollowSymLinks" >> "$APACHECONFIG"
+	echo "        Require all granted" >> "$APACHECONFIG"
+	echo "</Directory>" >> "$APACHECONFIG"
 fi
 
 echo -e "${GREEN}Restarting apache2${NC}"
@@ -128,7 +126,6 @@ service apache2 restart
 
 echo -e "${GREEN}Remove old files${NC}"
 rm html.tar.gz
-rm apache.tmp
 
 LOCALIP=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
 echo ""
