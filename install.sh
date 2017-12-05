@@ -51,8 +51,10 @@ if [ "$line" == "1" ]; then
 	rm -rf /var/www/html
 	apt-get remove --purge ffmpeg -y
 	apt-get remove --purge apache2 -y
-	apt-get remove --purge php5 libapache2-mod-php5 -y
-	apt-get remove --purge php5-curl -y
+	# for php5
+	apt-get remove --purge php5 php5-curl libapache2-mod-php5 -y
+	# for php7
+	# apt-get remove --purge php php-curl libapache2-mod-php php-xml php-mbstring -y	
 fi
 
 ROKUPHP="# Added by roku php install"
@@ -73,14 +75,17 @@ fi
 apt-get update -y
 apt-get install ffmpeg -y
 apt-get install apache2 -y
-apt-get install php5 libapache2-mod-php5 -y
-apt-get install php5-curl -y
+# for php5
+apt-get install php5 php5-curl libapache2-mod-php5 -y
+
+# for php7
+# apt-get install php php-curl libapache2-mod-php php-xml php-mbstring -y	
+
 
 echo -e "${GREEN}Rename index.html to index-old.html${NC}"
 mv /var/www/html/index.html /var/www/html/index-old.html
 
 echo -e "${GREEN}Retrieve php files archive...${NC}"
-# wget --no-http-keep-alive -O html.tar.gz "https://sites.google.com/site/marginallyhandy/html.tar.gz?attredirects=0&d=1"
 wget --no-http-keep-alive -O html.tar.gz "https://github.com/e1ioan/rokuphp/raw/master/html/html.tar.gz"
 
 echo -e "${GREEN}Please wait...${NC}"
@@ -102,9 +107,6 @@ tar -xvzf html.tar.gz --directory /var/www
 echo -e "${GREEN}Changing directory rights${NC}"
 chown -R www-data:www-data /var/www/html
 chmod -R g+rw /var/www/html
-
-#chown -R www-data:www-data /dev/shm
-#chmod -R g+rw /dev/shm
 
 APACHECONFIG=/etc/apache2/apache2.conf
 
