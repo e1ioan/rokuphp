@@ -54,7 +54,8 @@ if [ "$line" == "1" ]; then
 	# for php5
 	apt-get remove --purge php5 php5-curl libapache2-mod-php5 -y
 	# for php7
-	# apt-get remove --purge php php-curl libapache2-mod-php php-xml php-mbstring -y	
+	# apt-get remove --purge php php-curl libapache2-mod-php php-xml php-mbstring -y
+	apt-get autoremove -y
 fi
 
 ROKUPHP="# Added by roku php install"
