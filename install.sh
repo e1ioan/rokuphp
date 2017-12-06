@@ -52,9 +52,9 @@ if [ "$line" == "1" ]; then
 	apt-get remove --purge ffmpeg -y
 	apt-get remove --purge apache2 -y
 	# for php5
-	apt-get remove --purge php5 php5-curl libapache2-mod-php5 -y
+	# apt-get remove --purge php5 php5-curl libapache2-mod-php5 -y
 	# for php7
-	# apt-get remove --purge php php-curl libapache2-mod-php php-xml php-mbstring -y
+	apt-get remove --purge php php-curl libapache2-mod-php php-xml php-mbstring -y
 	apt-get autoremove -y
 fi
 
@@ -63,24 +63,23 @@ ROKUPHP="# Added by roku php install"
 echo -e "${GREEN}Installing the required packages${NC}"	
 # add new repository for php5
 
-REPCONFIG=/etc/apt/sources.list
-
-if grep -q "$ROKUPHP" "$REPCONFIG"; then
-	echo -e "${GREEN}PHP5 repository already good${NC}"
-else
-	echo -e "${GREEN}Modifying /etc/apt/sources.list file${NC}"
-	echo "deb http://raspbian.mirror.uk.sargasso.net/raspbian/ jessie main contrib non-free rpi" >> "$REPCONFIG"
-	echo "$ROKUPHP" >> "$REPCONFIG"
-fi
+#REPCONFIG=/etc/apt/sources.list
+#if grep -q "$ROKUPHP" "$REPCONFIG"; then
+#	echo -e "${GREEN}PHP5 repository already good${NC}"
+#else
+#	echo -e "${GREEN}Modifying /etc/apt/sources.list file${NC}"
+#	echo "deb http://raspbian.mirror.uk.sargasso.net/raspbian/ jessie main contrib non-free rpi" >> "$REPCONFIG"
+#	echo "$ROKUPHP" >> "$REPCONFIG"
+#fi
 
 apt-get update -y
 apt-get install ffmpeg -y
 apt-get install apache2 -y
 # for php5
-apt-get install php5 php5-curl libapache2-mod-php5 -y
+#apt-get install php5 php5-curl libapache2-mod-php5 -y
 
 # for php7
-# apt-get install php php-curl libapache2-mod-php php-xml php-mbstring -y	
+apt-get install php php-curl libapache2-mod-php php-xml php-mbstring -y	
 
 
 echo -e "${GREEN}Rename index.html to index-old.html${NC}"
