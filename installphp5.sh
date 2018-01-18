@@ -52,7 +52,7 @@ if [ "$line" == "1" ]; then
 	apt-get remove --purge ffmpeg -y
 	apt-get remove --purge apache2 -y
 	# for php5
-	# apt-get remove --purge php5 php5-curl libapache2-mod-php5 -y
+	apt-get remove --purge php5 php5-curl libapache2-mod-php5 -y
 	# for php7
 	apt-get remove --purge php php-curl libapache2-mod-php php-xml php-mbstring -y
 	apt-get autoremove -y
@@ -76,10 +76,10 @@ apt-get update -y
 apt-get install ffmpeg -y
 apt-get install apache2 -y
 # for php5
-#apt-get install php5 php5-curl libapache2-mod-php5 -y
+apt-get install php5 php5-curl libapache2-mod-php5 -y
 
 # for php7
-apt-get install php php-curl libapache2-mod-php php-xml php-mbstring -y	
+#apt-get install php php-curl libapache2-mod-php php-xml php-mbstring -y	
 
 
 echo -e "${GREEN}Rename index.html to index-old.html${NC}"
