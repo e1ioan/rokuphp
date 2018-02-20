@@ -42,10 +42,18 @@ You can use H.264 to HLS on the Pi along with any other software you want to use
 
 Wait for the Raspbian OS install to be done and then, open a console window and type:
 ```
+wget https://raw.githubusercontent.com/e1ioan/rokuphp/master/installphp5.sh
+chmod +x installphp5.sh
+sudo ./installphp5.sh
+```
+
+If php5 fails to install, you can try installing php7 using the following set of commands:
+```
 wget https://raw.githubusercontent.com/e1ioan/rokuphp/master/install.sh
 chmod +x install.sh
 sudo ./install.sh
 ```
+
 You will be shown two option:
 1. To clean intall, which is recommended, will remove - if already installed - ffmpeg, apache2, php and then clean install and configure the packages
 2. Dirty install, which will leave all the packages alone if already installed, and just try to configure them.
