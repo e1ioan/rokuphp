@@ -54,7 +54,7 @@ if [ "$line" == "1" ]; then
 	# for php5
 	# apt-get remove --purge php5 php5-curl libapache2-mod-php5 -y
 	# for php7
-	apt-get remove --purge php php-curl libapache2-mod-php php-xml php-mbstring -y
+	apt-get purge 'php*' -y
 	apt-get autoremove -y
 fi
 
@@ -79,7 +79,7 @@ apt-get install apache2 -y
 #apt-get install php5 php5-curl libapache2-mod-php5 -y
 
 # for php7
-apt-get install php7.1 php7.1-curl libapache2-mod-php7.1 php7.1-xml php7.1-mbstring -y	
+apt-get install php php-curl libapache2-mod-php php-xml php-mbstring -y	
 
 
 echo -e "${GREEN}Rename index.html to index-old.html${NC}"
