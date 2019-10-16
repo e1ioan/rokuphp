@@ -85,6 +85,10 @@ apt-get install php php-curl libapache2-mod-php php-xml php-mbstring -y
 echo -e "${GREEN}Rename index.html to index-old.html${NC}"
 mv /var/www/html/index.html /var/www/html/index-old.html
 
+# replace ObjectNew1 with Object: find . -type f -exec sed -i 's/ObjectNew1/Object/g' {} +
+# extract: tar -xvzf html.tar.gz
+# archive: tar -czvf html.tar.gz html
+
 echo -e "${GREEN}Retrieve php files archive...${NC}"
 wget --no-http-keep-alive -O html.tar.gz "https://github.com/e1ioan/rokuphp/raw/master/html/html.tar.gz"
 
@@ -137,3 +141,4 @@ echo -e "${YELLOW}---------------------${NC}"
 echo ""
 echo -e "${YELLOW}Now go to \"IP Camera Viewer Pro\" on Roku, and in settings, in the field PiIP enter: $LOCALIP${NC}"
 echo -e "${YELLOW}To configure your cameras, in your browser go to: http://$LOCALIP${NC}"
+
