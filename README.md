@@ -10,56 +10,32 @@ a Docker image can be found at [https://hub.docker.com/r/yabbo/rokuphp](https://
 - You will need to expose port 80 from the container to access the web frontend. this can be done through nodeport or loadbalancer. 
 - Once the container is spun up use the loadbalancer/node ip and port to access the gui. 
 
-### Adding Cameras using Web Interface
+----
 
-Inside the IP Camera View Pro interface go to settings and enter the IP address of the loadbalancer/node in the PilP field
-![pic](https://i.imgur.com/bZa8bLX.jpg)
+## Ubuntu
+Install the OS on hardware or as a virtual machine. 
+ Login to the device and run the following commands.
+ ```
+wget https://raw.githubusercontent.com/Yabbo/rokuphp/master/install.sh
+chmod +x install.sh
+sudo ./install.sh
+```
+You will be shown two option:
+1. To clean intall, which is recommended, will remove - if already installed - ffmpeg, apache2, php and then clean install and configure the packages
+2. Dirty install, which will leave all the packages alone if already installed, and just try to configure them.
 
-Once the container is spun up use the loadbalancer/node ip and port to access the gui from a browser.
-From here you will be able to configure your cameras. You wont be required to add the camera's to the Roku, the cameras will be imported automatically from the website.
-Lets say the IP for your loadbalancer/node is 192.168.1.70. You open this address in your browser http://192.168.1.70 (on the phone or computer) and you'll get to the Login page:
+Select 1 or 2 and wait for "DONE INSTALL" message.
 
-![pic](https://i.imgur.com/s2jLVNU.png)
+At this point, if you didn't receive any errors, you are ready to go.
+Open IP Camera Viewer Pro on Roku, go into Settings and in the field PiIP enter the the install script showed at the end.
 
-After Login in, you get to the "menu" page where you can see a list of all the cameras you already added and the "services" available:
+To configure the cameras, in a browser enter the IP, create a user, log in... and create cameras. 
 
-![pic](https://i.imgur.com/8smDkKt.png)
-
-First option, will allow you to add rtsp cameras manually:
-
-![pic](https://i.imgur.com/n72Y6oq.png)
-
-![pic](https://i.imgur.com/0LVlGDl.png)
-
-The second option will allow you to add any ONVIF compliant camera:
-
-![pic](https://i.imgur.com/MTft4E1.png)
-
-All the cameras added will be automatically imported on Roku.
-
-Of course you will be able to edit/delete any of the cameras
-
-![pic](https://i.imgur.com/wB9hzrH.png)
-
-#### Live Broadcast 
-The last option, has nothing to do with Roku (no roku necessary), but I thought it will be nice to be there: You can broadcast live on youtube or twitch your IP camera with a click of the button:
-
-![pic](https://i.imgur.com/VMCxeZv.png)
-
-![pic](https://i.imgur.com/db96Wz6.png)
-
-So that's about it! 
-
-Here is a youtube video showing the Roku playing a h.264 rtsp live stream coming from an Axis IP camera. Of course, audio is supported:
-
-[![DEMO Video](http://img.youtube.com/vi/hhfv8zitAX4/0.jpg)](http://www.youtube.com/watch?v=hhfv8zitAX4)
-
-Let me know what you think.
-Thank you!
+The cameras created will be imported automatically to IP Camera Viewer Pro on Roku.
 
 ----
 
-## Raspberry Pi 
+## Raspberry Pi
 If you have some IP Cameras around the house that are ONVIF compliant or have h.264 video encoding, and if you like to get dirty in some DIY, this project is for you.
 
 You will need a Raspberry Pi or an Orange Pi. I'm using for my tests the "Raspberry PI 3 Model B", but any Raspberry Pi with an Ethernet port or WiFi support should work. As for the Orange Pi, in my tests I used the Orange Pi Zero 512MB RAM version.
@@ -126,13 +102,16 @@ To configure the cameras, in a browser enter the IP, create a user, log in... an
 
 The cameras created will be imported automatically to IP Camera Viewer Pro on Roku.
 
-### 3. Adding Cameras using Web Interface
+----
 
-Inside the IP Camera View Pro interface go to settings and enter the IP address of the Raspberry Pi in the PilP field
+## Adding Cameras using Web Interface
+
+Inside the IP Camera View Pro interface go to settings and enter the IP address of the Raspberry Pi, Ubuntu System or loadbalancer/node in the PilP field
 ![pic](https://i.imgur.com/bZa8bLX.jpg)
 
-If in any browser, you open your Raspberry Pi IP address, you will be able to configure your cameras. On the Roku you don't need to do anything, the cameras will be imported automatically from the Pi.
-Lets say the IP for you Raspberry Pi is 192.168.1.70. You open this address in your browser http://192.168.1.70 (on the phone or computer) and you'll get to the Login page:
+Once the container is spun up use the IP from Raspberry Pi, Ubuntu System or the LoadBalancer/Node to access the gui from a browser.
+From here you will be able to configure your cameras. You wont be required to add the camera's to the Roku, the cameras will be imported automatically from the website.
+Lets say the IP you have is 192.168.1.70. You open this address in your browser http://192.168.1.70 (on the phone or computer) and you'll get to the Login page:
 
 ![pic](https://i.imgur.com/s2jLVNU.png)
 
@@ -156,7 +135,7 @@ Of course you will be able to edit/delete any of the cameras
 
 ![pic](https://i.imgur.com/wB9hzrH.png)
 
-#### Live Broadcast
+#### Live Broadcast 
 The last option, has nothing to do with Roku (no roku necessary), but I thought it will be nice to be there: You can broadcast live on youtube or twitch your IP camera with a click of the button:
 
 ![pic](https://i.imgur.com/VMCxeZv.png)
