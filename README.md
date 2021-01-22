@@ -41,7 +41,9 @@ Of course you will be able to edit/delete any of the cameras
 
 ![pic](https://i.imgur.com/wB9hzrH.png)
 
+#### Live Broadcast 
 The last option, has nothing to do with Roku (no roku necessary), but I thought it will be nice to be there: You can broadcast live on youtube or twitch your IP camera with a click of the button:
+
 ![pic](https://i.imgur.com/VMCxeZv.png)
 
 ![pic](https://i.imgur.com/db96Wz6.png)
@@ -154,7 +156,9 @@ Of course you will be able to edit/delete any of the cameras
 
 ![pic](https://i.imgur.com/wB9hzrH.png)
 
+#### Live Broadcast
 The last option, has nothing to do with Roku (no roku necessary), but I thought it will be nice to be there: You can broadcast live on youtube or twitch your IP camera with a click of the button:
+
 ![pic](https://i.imgur.com/VMCxeZv.png)
 
 ![pic](https://i.imgur.com/db96Wz6.png)
