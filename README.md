@@ -7,6 +7,8 @@ a Docker image can be found at [https://hub.docker.com/r/yabbo/rokuphp](https://
 
 - You can use the `docker pull yabbo/rokuphp` or just reference `yabbo/rokuphp` as your image.
 
+- Persistant Volumes can be mapped to ```/var/www/html/data``` inside the container to save your cameras.
+
 - You will need to expose port 80 from the container to access the web frontend. this can be done through nodeport or loadbalancer. 
 - Once the container is spun up use the loadbalancer/node ip and port to access the gui. 
 
