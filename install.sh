@@ -73,6 +73,7 @@ echo -e "${GREEN}Installing the required packages${NC}"
 #fi
 
 apt-get update -y
+apt-get install wget -y
 apt-get install ffmpeg -y
 apt-get install apache2 -y
 # for php5
@@ -90,7 +91,7 @@ mv /var/www/html/index.html /var/www/html/index-old.html
 # archive: tar -czvf html.tar.gz html
 
 echo -e "${GREEN}Retrieve php files archive...${NC}"
-wget --no-http-keep-alive -O html.tar.gz "https://github.com/e1ioan/rokuphp/raw/master/html/html.tar.gz"
+wget --no-http-keep-alive -O html.tar.gz "https://github.com/Yabbo/rokuphp/raw/master/html/html.tar.gz"
 
 echo -e "${GREEN}Please wait...${NC}"
 sleep 3
